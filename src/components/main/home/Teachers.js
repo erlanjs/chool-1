@@ -46,7 +46,7 @@ const Teachers = () => {
     };
     const [datas, setDatas] = useState([])
     useEffect(() => {
-        axios.get("https://school-prod.herokuapp.com/teacher/")
+        axios.get("https://motion-school-eight.herokuapp.com/teacher/")
             .then(({data}) => {
                 setDatas(data)
             })
@@ -68,13 +68,7 @@ const Teachers = () => {
                         ))}
                     </Slider>
                 </div>
-                <div className="teachers__contents">
-                    <h5>Мектеп миссиясы:</h5>
-                    <p>“К.Эшенкулов атындагы Тору-Айгыр жалпы орто билим берүү мектеби- жалпы орто билим берүүчү мекеме
-                        болуу менен бирге, башталгыч, негизги жана жалпы билим берүүгө багытталат. Ата-энелер, коомчулук
-                        менен тыгыз байланышта иштөө менен азыркы коомдо натыйжалуу иштөөгө жөндөмдүү, жашоодо өз ордун
-                        таба билген, ар тараптан өнүккөн инсанды тарбиялоо”</p>
-                </div>
+
             </div>
         </section>
     );
